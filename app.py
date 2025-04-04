@@ -17,6 +17,11 @@ st.set_page_config(
 st.sidebar.header("Configuration")
 
 # 1. API Key Input
+# link to https://aistudio.google.com/apikey
+st.sidebar.markdown(
+    "Get your API key from [Google AI Studio](https://aistudio.google.com/apikey)."
+)
+
 api_key = st.sidebar.text_input(
     "Enter your Gemini API Key",
     type="password",
